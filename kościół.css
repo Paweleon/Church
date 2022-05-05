@@ -6,76 +6,134 @@ html {
 }
 
 .body {
+
     background-image: url(tło.png);
-    background-attachment: fixed;
-    background-size: 100%;
-    
+}
+
+.main{
+    background-color: white;
+    border-bottom: 3px dotted blueviolet;
+    border-radius: 100px;
+    margin: 100px;
 }
 
 .grid {
     display: grid;
-    
-    grid-template-columns: 400px 10px 400px;
-    grid-template-rows: 180px 50px 50px 300px 300px 50px;
-    
+    grid-template-columns: repeat(9, 100px);
+    grid-template-rows: repeat(10, 100px);
+    grid-gap: 5px;
+    background-color: white;
+    margin: 100px;
+    border-radius: 100px;
+
+
+}  
+ 
+.header {
+
+    grid-column: 3 / 8;
+    grid-row: 1 / 3
+
 }
 
-.header {
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-row-end: 2;
-    grid-column-end: 4;
-    
+.mainheader {
+
+    color: rgb(9, 209, 245);
+    font-size: 25px;
+    text-align: center;
+
 }
 
 .navigation {
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-row-end: 3;
-    grid-column-end: 4;
+
+    font-size: 20px;
+    border-bottom: 1px solid #828385;
+    width:100%;
+    height:50px;
+    text-align: center;
     
 }
-.sectionheader {
-    grid-row-start: 3;
-    grid-column-start: 1;
-    grid-row-end: 4;
-    grid-column-end: 4;
+
+.navigation__item  {
+
+    display:inline;
+}
+
+.navigation__link {
    
-}
+    color: rgb(9, 209, 245);
+    text-decoration:none;
 
-.section {
-    grid-row-start: 3;
-    grid-column-start: 1;
-    grid-row-end: 4;
-    grid-column-end: 2;
-    overflow: hidden;
-}
-
-.section__2 {
-    grid-row-start: 3;
-    grid-column-start: 3;
-    grid-row-end: 4;
-    grid-column-end: 4;
-    overflow: hidden;
 }
 
 .div {
-    grid-row-start: 4;
-    grid-column-start: 1;
-    grid-row-end: 5;
-    grid-column-end: 4;
+
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+    width: 200px;
+    height: 200px;
+    background: url(https://diecezja.legnica.pl/wp-content/uploads/2018/09/biedrzychowice.png);
     
-  
+
+}
+
+.section {
+    
+    grid-column: 3 / 8;
+    grid-row: 3 / 6;
+
+}
+
+.article {
+
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.sectionheader {
+    
+    font-size: 25px; 
+    color: rgb(9, 209, 245);
+    text-align: center;
+}
+
+.paragraph {
+
+    font-size: 15px;
+    color:black;
+    text-align: right;
+}
+
+.paragraph__second {
+
+    font-size: 15px;
+    color:black;
+    text-align: center;
+}
+
+.section__second {
+
+    grid-column: 3 / 8;
+    grid-row: 6 / 9;
+    border-top:  1px solid #828385;
+
+
+}
+
+.footer {
+
+    grid-column: 3 / 8;
+    grid-row: 9 / 10;
+    border-top:  1px solid #828385;
+
 }
 
 
 
 
-
-.grid__item {
-    
-    background-color: tomato;
-}
 box {
     
         width: 250px;
@@ -94,41 +152,15 @@ box {
 
 }
 
-main {
-    background-color: white;
-    border-bottom: 3px dotted blueviolet;
-    border-radius: 100px;
-    margin: 100px;
-}
-
-.navigation {
-    border-top: 1px solid #e6edf5;
-    width:100%;
-    height:50px;
-    text-align: center;
-
-}
-.navigation__item {
-    flex: column;
-    display: inline;
-    
-    
-}
-.navigation__list {
+navigation__list {
     flex-direction: column;
     text-align: center;
 
 }
-.mainheader {
+sectionheader {
     color:rgb(9, 209, 245);
     text-align: center;
-    font-size: 1cm;
-    
-}
-.sectionheader {
-    color:rgb(9, 209, 245);
-    text-align: center;
-    font-size: 0,7cm
+    font-size: 0,5cm
 }
 
 
@@ -151,7 +183,7 @@ flex__item {
     font-size: 20px ;
     width: 500px;
 }
-.ul {
+takieul {
     color:black;
     font-size: 0,5cm;
     text-align:center;
