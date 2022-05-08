@@ -8,14 +8,20 @@
     <title>Kościół Św. Antoniego</title>
     <link href="kościół.css" rel="stylesheet" type="text/css">
     <link href="normalize.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
 
 </head>
 
 <body class="body">
 
+    <p class="cytat">
+        „Będziesz miłował Pana, Boga swego, z całego serca swego i z całej duszy swojej, i z całej myśli swojej, i z
+        całej siły swojej. A drugie jest to: Będziesz miłował bliźniego swego jak siebie samego”.
+        Ew. Marka 12:30–31
+    </p>
 
-    <main class="grid">
+    <main class="grid" id="top">
 
         <header class="header">
 
@@ -25,12 +31,13 @@
             </h1>
             <hr>
             <nav class="navigation">
-
-                <li class="navigation__item"> <a class="navigation__link" href="Index3.html">Główna</a></li>
-                <li class="navigation__item"> <a class="navigation__link" href="1.Ogłoszenia.html">Ogłoszenia</a> </li>
-                <li class="navigation__item"> <a class="navigation__link" href="3.Spowiedź">Spowiedź</a></li>
-                <li class="navigation__item"> <a class="navigation__link" href="Historia.html">Historia</a></li>
-
+                <ul class="navigation__list">
+                    <li class="navigation__item"> <a class="navigation__link" href="Index3.html">Główna</a></li>
+                    <li class="navigation__item"> <a class="navigation__link" href="Ogłoszenia.html">Ogłoszenia</a>
+                    </li>
+                    <li class="navigation__item"> <a class="navigation__link" href="Spowiedź.html">Spowiedź</a></li>
+                    <li class="navigation__item"> <a class="navigation__link" href="Historia.html">Historia</a></li>
+                </ul>
             </nav>
         </header>
 
@@ -47,23 +54,46 @@
 
         <div class="inside">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Biedrzychowice%2C_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Antoniego_%28FriedersdorfOL-Kirche-3%29.jpg/800px-Biedrzychowice%2C_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Antoniego_%28FriedersdorfOL-Kirche-3%29.jpg?20150504103917"
-            width="200" height="200" alt="wnętrze Kościoła">
+                width="200" height="200" alt="wnętrze Kościoła">
         </div>
 
         <div class="front">
-            <img src="https://polska-org.pl/foto/404/Kosciol_sw_Antoniego_Biedrzychowice_404939.jpg"
-            width="200" height="200" alt="przód kościoła">
+            <img src="https://polska-org.pl/foto/404/Kosciol_sw_Antoniego_Biedrzychowice_404939.jpg" width="200"
+                height="200" alt="przód kościoła">
         </div>
 
         <div class="back">
-            <img src="https://polska-org.pl/foto/182/Kosciol_sw_Antoniego_Biedrzychowice_182568.jpg"
-            width="200" height="200" alt="tył kościołą">
+            <img src="https://polska-org.pl/foto/182/Kosciol_sw_Antoniego_Biedrzychowice_182568.jpg" width="200"
+                height="200" alt="tył kościołą">
         </div>
 
         <div class="Antoni">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/St._Anthony_-_facial_reconstruction_-_for_mobile_and_newspaper.jpg/250px-St._Anthony_-_facial_reconstruction_-_for_mobile_and_newspaper.jpg"
-            width="200" height="200" alt="Sw. Antoni">
+                width="200" height="200" alt="Św. Antoni">
         </div>
+
+        <div class="Antonio">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Antonius_von_Padua_mit_Jesuskind_c._1700.png"
+                width="200" height="200" alt="Św. Antoni">
+        </div>
+
+        <div class="palace">
+            <img src="http://www.zamki.karr.pl/galerie/biedrzychowice/zdgl.jpg" width="200" height="200"
+                alt="Pałac w Biedrzychowicach">
+        </div>
+
+        <div class="tower">
+            <img src="https://polska-org.pl/foto/27/Wieza_widokowa_ruina_Biedrzychowice_27140.jpg" width="200"
+                height="200" alt="Wieża w Biedrzychowicach">
+        </div>
+
+        
+        <div class="down">
+            <img src="https://ofm-przemysl.pl/wp-content/uploads/2022/04/ostatnia-wieczerza-730x300.jpg" width="900"
+                height="300" alt="Ostatnia wieczerza">
+        </div>
+
+
 
 
         <section class="section">
@@ -102,18 +132,6 @@
             </article>
         </section>
 
-        <section class="antek">
-            <h2 class=sectionheader>Św. Antoni z Padwy</h2>
-
-            <p>
-                Święty Antoni jest patronem osób i rzeczy zaginionych. Pochodził z bogatej, szanowanej rodziny.
-                Ochrzczono go imieniem Ferdynand. Jeszcze zanim ukończył 20 lat, wstąpił do zakonu Kanoników Regularnych
-                św. Augustyna. Święty Antoni Padewski to jeden z najpopularniejszych świętych Kościoła i najbardziej
-                interesowny, bo podobno szybciej spełnia prośby, jeżeli obieca mu się kilku groszy na rzecz biednych.
-
-            </p>
-        </section>
-
         <section class="section__second">
 
             <h2 class="sectionheader">W jakie dni w roku mamy obowiązek uczestniczyć we Mszy świętej?</h2>
@@ -129,11 +147,42 @@
             </ul>
         </section>
 
-        <footer class="footer">
-            kontakt do admina
-        </footer>
+        <section class="antek">
+            <h2 class=sectionheader>Św. Antoni z Padwy</h2>
+
+            <p>
+                Święty Antoni jest patronem osób i rzeczy zaginionych. Pochodził z bogatej, szanowanej rodziny.
+                Ochrzczono go imieniem Ferdynand. Jeszcze zanim ukończył 20 lat, wstąpił do zakonu Kanoników Regularnych
+                św. Augustyna. Święty Antoni Padewski to jeden z najpopularniejszych świętych Kościoła i najbardziej
+                interesowny, bo podobno szybciej spełnia prośby, jeżeli obieca mu się kilku groszy na rzecz biednych.
+
+            </p>
+        </section>
+
+        <section class="village">
+            <h2 class="sectionheader">Biedrzychowice</h2>
+
+            <p>
+                Biedrzychowice to duża wieś znajdująca się w województwie dolnośląskim, w powiecie lubańskim, w gminie
+                Olszyna. Miejscowość jest położona nad górnym biegiem Biedrzychówki, na obszarze Wzgórz Radoniowskich,
+                wchodzących w skład Pogórza Izerskiego.
+                Według Narodowego Spisu Powszechnego z 2011 roku Biedrzychowice liczyły 966 mieszkańców. Jest to
+                największa miejscowością gminy Olszyna.
+            </p>
+            <a href="#top" class="top">w górę! </a>
+        </section>
+
 
     </main>
+
+    <footer class="footer">
+        kontakt do do twórcy strony: <br>
+        723 613 221
+
+    </footer>
+
+    <script src="kościół.js">
+    </script>
 
 </body>
 

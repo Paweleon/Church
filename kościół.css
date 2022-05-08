@@ -13,11 +13,20 @@ html {
     background-size: 100%;
 }
 
+.cytat {
+    
+    text-align: center;
+    font-size: 40px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color:white;
+}
+
 .grid {
-    display: grid;
    
+    display: grid;
+    position: relative;
     grid-template-columns: repeat(11, 100px);
-    grid-template-rows: repeat(17, 100px);
+    grid-template-rows: repeat(18, 100px);
     grid-gap: 5px;
     background-color: white;
     margin: 100px;
@@ -25,16 +34,21 @@ html {
     border: 15px double rgb(228, 168, 4);   
 
 }  
+
+.grid__new {
+   
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(11, 100px);
+    grid-template-rows: repeat(26, 100px);
+    grid-gap: 5px;
+    background-color: white;
+    margin: 100px;
+    border-radius: 100px;
+    border: 15px double rgb(228, 168, 4);   
+
+} 
  
-@media (max-width: 640px;) { 
-
-    .grid { 
-
-        display:
-    
-}
-
-}
 .header {
     
     grid-column: 4 / 9;
@@ -85,8 +99,15 @@ html {
     grid-row: 1 / 3;
     width: 150px;
     height: 150px;
- 
+}
 
+.second__fish {
+
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    width: 150px;
+    height: 150px;
+ 
 }
 .div {
 
@@ -144,15 +165,6 @@ html {
 
 }
 
-.second__fish {
-
-    grid-column: 2 / 4;
-    grid-row: 1 / 3;
-    width: 150px;
-    height: 150px;
- 
-}
-
 .inside {
 
     grid-column: 1 / 3;
@@ -184,10 +196,76 @@ html {
     transform: scale(2.2); 
 
 }
+
+.Antonio {
+
+    grid-column: 1 / 4;
+    grid-row: 9 / 11;
+    width: 200px;
+    height: 200px;
+    margin: 50px; 
+    transition: 0.5s all linear;
+}
+
+.Antonio:hover {
+
+    transform: scale(2.2); 
+
+}
+
+.palace {
+
+    grid-column: 1 / 4;
+    grid-row: 12 / 14;
+    width: 200px;
+    height: 200px;
+    margin: 50px; 
+    transition: 0.5s all linear;
+}
+
+.palace:hover {
+
+    transform: scale(2.2); 
+
+}
+
+.tower {
+
+    grid-column: 9 / 11;
+    grid-row: 12 / 14;
+    width: 200px;
+    height: 200px;
+    margin: 50px; 
+    transition: 0.5s all linear;
+}
+
+.tower:hover {
+
+    transform: scale(2.2); 
+
+}
+
+.down {
+
+    grid-column: 2 / 11;
+    grid-row: 15 / 18;
+    width: 900px;
+    height: 300px;
+    margin: 10px; 
+}
 .section {
     
     grid-column: 4 / 9;
-    grid-row: 3 / 6;
+    grid-row: 3 / 12; 
+
+}
+
+.section__history {
+    
+    grid-column: 4 / 9;
+    grid-row: 3 / 12;
+    border: 30px double rgb(228, 168, 4);
+    padding: 20px;
 
 }
 
@@ -243,25 +321,38 @@ html {
     grid-row: 9 / 11;
     border-top:  1px solid #828385;
     font-family: URW Chancery L, cursive;
+    text-align: justify;
+}
+
+.village {
+
+    grid-column: 4 / 9;
+    grid-row: 12 / 14;
+    border-top:  1px solid #828385;
+    font-family: URW Chancery L, cursive;
+    text-align: justify;
 }
 
 .history {
 
     font-family: URW Chancery L, cursive;
+    text-align: justify;
 }
 
 .footer {
 
-    grid-column: 4 / 9;
-    grid-row: 11 / 12;
-    border-top:  1px solid #828385;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+    font-family: fantasy;
+    
 
 }
 
 .gallery {
  
     grid-column: 1 / 10;
-    grid-row: 10 / 17;
+    grid-row: 12 / 17;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -303,7 +394,114 @@ html {
     transform: scale(2.2);
     z-index: 5;
 }
+
+.top {
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    bottom: 200px;
+    right: 10px;
+}
+
+
   
+@media (max-width: 1100px) {
+
+    .grid {
+        
+        display: block;
+        padding: 20px;
+        margin:10px;
+    }
+
+    .grid__new {
+
+        display: block;
+        grid-template-rows: repeat(29, 100px);
+        padding: 20px;
+        margin: 10px;
+       
+
+    }
+
+    .header {
+    
+        grid-column: 1 / 5;
+    
+    }
+
+    .section {
+    
+        grid-column: 1 / 5;
+        
+    }
+
+    .fish  {
+
+        display: none;
+    }
+
+    .second__fish {
+
+        display: none;
+    }
+
+    .div {
+
+        display: none;
+    }
+
+    .front {
+
+        display: none
+    }
+
+    .back {
+
+        display:none;
+    }
+
+    .inside {
+
+        display: none;
+    }
+
+    .Antoni {
+
+        display: none;
+    }
+
+    .Antonio {
+
+        display: none;
+    }
+
+    .palace {
+
+        display: none;
+    }
+
+    .tower {
+
+        display: none;
+    }
+
+    .down {
+
+        display: none;
+    }
+
+    .top {
+        color:black;
+    }
+
+
+}
+
+
+
+    
+
 
     
 
