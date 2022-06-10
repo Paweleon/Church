@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kościół Św. Antoniego</title>
+    <link rel="stylesheet" type="text/css" href="../css/kościół.css">
+    <link href='http://fonts.googleapis.com/css?family=Akaya+Telivigala&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Amita&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Clicker+Script&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+
+
+</head>
+
+
+<body class="body">
+
+    <main class="grid" id="top">
+
+
+
+        <header class="header">
+
+            <h1 class="mainheader">
+
+                RZYMSKOKATOLICKA PARAFIA PW. <BR>
+                ŚW. ANTONIEGO PADEWSKIEGO W BIEDRZYCHOWICACH
+
+            </h1>
+
+            <nav class="navigation">
+
+
+
+                <div class="navigation__list">
+
+                    <ul class="navigation__menu">
+
+                        <div class="navigation__dropdown"><a href="#" class=dropdown__icon>Informacje</a>
+
+                        </div>
+
+                        <div class="navigation__dropdown"><a href="#" class=dropdown__icon>Aktualności</a>
+
+
+                            <ul class="dropdown__menu">
+
+                                <li class="dropdown__item"><a href="ogłoszenia.html"
+                                        class="dropdown__link">Ogłoszenia</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Wydarzenia</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Czytanie na niedzielę</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Forum</a> </li>
+                                <li class="dropdown__item"><a href="linki.html" class="dropdown__link">Ciekawe linki</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="navigation__dropdown"><a href="#" class="dropdown__icon">Sakramenty</a>
+
+
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Chrzest</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Bierzmowanie</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Eucharystia</a> </li>
+                                <li class="dropdown__item"><a href="pokuta.html" class="dropdown__link">Pokuta</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Namaszczenie Chorych</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Małżenstwo</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Kapłaństwo</a> </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="navigation__dropdown"><a href="#" class=dropdown__icon>Historia</a>
+
+
+                            <ul class="dropdown__menu">
+
+                                <li class="dropdown__item"><a href="HistoriaKościoła.html"
+                                        class="dropdown__link">Historia Kościoła</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Byli proboszczowie</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Historia Biedrzychowic</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Historia Okolic</a> </li>
+
+                            </ul>
+
+                        </div>
+
+
+                    </ul>
+                </div>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+
+            <script>
+                const hamburger = document.querySelector(".hamburger");
+                const navigation__menu = document.querySelector(".navigation__menu");
+
+                hamburger.addEventListener("click", () => {
+                    hamburger.classList.toggle("active");
+                    navigation__menu.classList.toggle("active");
+                });
+
+                document.querySelectorAll(".nav-link").forEach((link) =>
+                    link.addEventListener("click", () => {
+                        hamburger.classList.remove("active");
+                        navigation__menu.classList.remove("active");
+                    })
+                );
+
+            </script>
+
+
+
+
+        </header>
+
+
+        <section class="section__rap">
+
+            <h2 class="sectionheader"> KATOLICKIE RAPSY</h2>
+
+
+            <p class="paragraph_rap">
+
+                <a href="https://www.youtube.com/watch?v=iWtbA2Guel0" target="_blank"> HERES / WZN </a> <br>
+            <div class="Heres">
+                <img src="../assets/Heres.png" width="300" height="200" alt="Heres">
+            </div>
+
+            <a href="https://www.youtube.com/watch?v=4FXsNDDADkU&list=PL1DXqaQURWeDvynIGFeJu9K95LQnQWsr2&index=4"
+                target="_blank"> Ksiądz Jakub Bartczak </a> <br>
+            <div class="Bartczak">
+                <img src="../assets/Bartczak.png" width="300" height="200" alt="Heres">
+            </div>
+
+
+            <a href="https://www.youtube.com/watch?v=vRjTeayMunE&list=PLluQHVyLehiYwVshO_6j6WWwfqFWJ_bEJ"
+                target="_blank"> Ksiądz Dominik Chmielewski </a> <br>
+            <div class="Dominik">
+                <img src="../assets/Dominik.png" width="300" height="200" alt="Dominik">
+            </div>
+
+
+            </p>
+            <a href="#top" class="top">w górę! </a>
+
+
+
+
+
+        </section>
+
+        <div class="fish">
+            <img src="https://i.iplsc.com/-/0003KX5V4UX63V8I-C114.jpg" width="150" height="150" alt="Ryba">
+        </div>
+
+        <div class="second__fish">
+            <img src="https://i.iplsc.com/-/0003KX5V4UX63V8I-C114.jpg" width="150" height="150" alt="Ryba">
+        </div>
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <footer class="footer">
+
+        kontakt do do twórcy strony: <br>
+        723 613 221
+
+    </footer>
+
+
+</body>
+
+</html>

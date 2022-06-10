@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kościół Św. Antoniego</title>
-    <link href="kościół.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/kościół.css">
     <link href="normalize.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans&subset=latin,latin-ext' rel='stylesheet'
         type='text/css'>
@@ -19,10 +19,7 @@
 <body class="body">
 
 
-
-
-    <main class="grid" id="top">
-
+    <main class="grid">
 
         <header class="header">
 
@@ -32,19 +29,101 @@
                 ŚW. ANTONIEGO PADEWSKIEGO W BIEDRZYCHOWICACH
 
             </h1>
-            <hr>
 
             <nav class="navigation">
 
-                <ul class="navigation__list">
-                    <li class="navigation__item"> <a class="navigation__link" href="Index3.html">Główna</a></li>
-                    <li class="navigation__item"> <a class="navigation__link" href="Ogłoszenia.html">Ogłoszenia</a>
-                    </li>
-                    <li class="navigation__item"> <a class="navigation__link" href="Spowiedź.html">Spowiedź</a></li>
-                    <li class="navigation__item"> <a class="navigation__link" href="Historia.html">Historia</a></li>
-                </ul>
 
+
+                <div class="navigation__list">
+
+                    <ul class="navigation__menu">
+
+                        <div class="navigation__dropdown"><a href="#" class=dropdown__icon>Informacje</a>
+
+                        </div>
+
+                        <div class="navigation__dropdown"><a href="#" class=dropdown__icon>Aktualności</a>
+
+
+                            <ul class="dropdown__menu">
+
+                                <li class="dropdown__item"><a href="ogłoszenia.html"
+                                        class="dropdown__link">Ogłoszenia</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Wydarzenia</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Czytanie na niedzielę</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Forum</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Ciekawe linki</a> </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="navigation__dropdown"><a href="#" class="dropdown__icon">Sakramenty</a>
+
+
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Chrzest</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Bierzmowanie</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Eucharystia</a> </li>
+                                <li class="dropdown__item"><a href="pokuta.html" class="dropdown__link">Pokuta</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Namaszczenie Chorych</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Małżenstwo</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Kapłaństwo</a> </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="navigation__dropdown"><a href="#" class=dropdown__icon>Historia</a>
+
+
+                            <ul class="dropdown__menu">
+
+                                <li class="dropdown__item"><a href="HistoriaKościoła.html"
+                                        class="dropdown__link">Historia Kościoła</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Byli proboszczowie</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Historia Biedrzychowic</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Historia Okolic</a> </li>
+
+                            </ul>
+
+                        </div>
+
+
+                    </ul>
+                </div>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
+
+            <script>
+                const hamburger = document.querySelector(".hamburger");
+                const navigation__menu = document.querySelector(".navigation__menu");
+
+                hamburger.addEventListener("click", () => {
+                    hamburger.classList.toggle("active");
+                    navigation__menu.classList.toggle("active");
+                });
+
+                document.querySelectorAll(".nav-link").forEach((link) =>
+                    link.addEventListener("click", () => {
+                        hamburger.classList.remove("active");
+                        navigation__menu.classList.remove("active");
+                    })
+                );
+
+            </script>
+
+
+
 
         </header>
 
@@ -62,7 +141,7 @@
 
         <section class="section__seven">
 
-            <h1 class="sectionheader">Historia</h1>
+            <h2 class="sectionheader">Historia Kościoła</h2>
 
             <p class="history">
 
@@ -151,7 +230,7 @@
 
         <a href="#top" class="top">w górę! </a>
 
-        
+
 
     </main>
 
@@ -165,8 +244,8 @@
     </footer>
 
 
-    
-    <script src="kościół.js">
+
+    <script src="../js/Historia.js">
     </script>
 
 
