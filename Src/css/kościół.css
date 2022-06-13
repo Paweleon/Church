@@ -44,7 +44,7 @@ html {
    
     display: grid;  
     grid-template-columns: repeat(11, 100px);
-    grid-template-rows: repeat(18, 100px);
+    grid-template-rows: repeat(19, 100px);
     grid-gap: 5px;
     
     position: relative;
@@ -258,7 +258,7 @@ html {
 .section {
     
     grid-column: 4 / 9;
-    grid-row: 3 / 6; 
+    grid-row: 3 / 7; 
     
 }
 
@@ -277,31 +277,33 @@ html {
     align-items:center;
     justify-content: center;
     justify-content: space-between;
-    border-bottom:  1px solid #828385;
 
 }
 
 .paragraph {
     font-family: var(--paragraph);
     font-size: 15px;
+    font-weight: bold;
 }
 .paragraph__one {
 
-    font-size: 12px;
+    font-size: 14px;
     color:black;
     text-align: right;
     font-weight: 700 (bold);
     font-family: var(--paragraph);
     top:1px;
+    font-weight: bold;
     
 }
 
 .paragraph__second {
 
-    font-size: 12px;
+    font-size: 14px;
     color:black;
     text-align: left;
     font-family: var(--paragraph);
+    font-weight: bold;
      
 }
 
@@ -318,8 +320,8 @@ html {
 .section__second {
 
     grid-column: 4 / 9;
-    grid-row: 6 / 9;
-    
+    grid-row: 7 / 10;
+    border-top:  1px solid #828385;
     font-family: URW Chancery L, cursive;
     text-align: justify;
 
@@ -330,7 +332,7 @@ html {
 .section__three {
 
     grid-column: 4 / 9;
-    grid-row: 9 / 11;
+    grid-row: 10 / 13;
     border-top:  1px solid #828385;
     text-align: justify;
     font-family: "Yuji Boku", serif;
@@ -341,7 +343,7 @@ html {
 .section__four {
 
     grid-column: 4 / 9;
-    grid-row: 12 / 14;
+    grid-row: 13 / 15;
     border-top:  1px solid #828385;
     font-family: URW Chancery L, cursive;
     text-align: justify;
@@ -436,29 +438,51 @@ html {
     right: 5px;
 }
 
-
-
 .fish {
 
     grid-column: 9 / 11;
     grid-row: 1 / 3;
     width: 150px;
     height: 150px;
-    animation:naszaAnimacja 4s linear infinite;
-  }
   
-  @keyframes naszaAnimacja
-  {
-    0% { transform:perspective(300px) rotateY(0) translateX(0); }
-    100% { transform:perspective(300px) rotateY(360deg) translateX(150px); }
   }
-
 
 .second__fish {
 
     grid-column: 2 / 4;
     grid-row: 1 / 3;
     width: 150px;
+    
+  }
+
+ /*Animacje*/
+
+ .Birthday {
+
+    width:300px;
+    height:150px;
+    margin:0 auto;
+    background-color:none;
+    text-align:center;
+    line-height:50px;
+    font-size:26px;
+    animation:naszaAnimacja 7s linear infinite;
+    transform-origin:50% 50% 200px;
+  }
+  
+  @keyframes naszaAnimacja
+  {
+    0% { transform:perspective(900px) rotateY(0); }
+    100% { transform:perspective(900px) rotateY(360deg); }
+  }
+
+.fish--linki {
+
+    grid-column: 9 / 11;
+    grid-row: 1 / 3;
+    width: 150px;
+    height: 150px;
+    background: none;
     animation:naszaAnimacja 4s linear infinite;
   }
   
@@ -467,10 +491,26 @@ html {
     0% { transform:perspective(300px) rotateY(0) translateX(0); }
     100% { transform:perspective(300px) rotateY(360deg) translateX(150px); }
   }
-.div {
+
+
+.second__fish--linki {
+
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    width: 150px;
+    background-color: none;
+    animation:naszaAnimacja 4s linear infinite;
+  }
+  
+  @keyframes naszaAnimacja
+  {
+    0% { transform:perspective(300px) rotateY(0) translateX(0); }
+    100% { transform:perspective(300px) rotateY(360deg) translateX(150px); }
+  }
+.front__one {
 
     grid-column: 1 / 3;
-    grid-row: 3 / 5;
+    grid-row: 4 / 6;
     width: 200px;
     height: 200px;
     margin: 50px;  
@@ -478,7 +518,7 @@ html {
 
 }
 
-.div:hover {
+.front__one:hover {
 
     transform: scale(2.2);
     
@@ -487,7 +527,7 @@ html {
 .front {
 
     grid-column: 9 / 11;
-    grid-row: 3 / 5;
+    grid-row: 4 / 6;
     width: 200px;
     height: 200px;
     margin: 50px;  
@@ -503,7 +543,7 @@ html {
 .back {
 
     grid-column: 9 / 11;
-    grid-row: 6 / 8;
+    grid-row: 7 / 9;
     width: 200px;
     height: 200px;
     margin: 50px;  
@@ -526,7 +566,7 @@ html {
 .inside {
 
     grid-column: 1 / 3;
-    grid-row: 6 / 8;
+    grid-row: 7 / 9;
     width: 200px;
     height: 200px;
     margin: 50px; 
@@ -542,7 +582,7 @@ html {
 .Antoni {
 
     grid-column: 9 / 11;
-    grid-row: 9 / 11;
+    grid-row: 10 / 12;
     width: 200px;
     height: 200px;
     margin: 50px; 
@@ -558,7 +598,7 @@ html {
 .Antonio {
 
     grid-column: 1 / 4;
-    grid-row: 9 / 11;
+    grid-row: 10 / 12;
     width: 200px;
     height: 200px;
     margin: 50px; 
@@ -574,7 +614,7 @@ html {
 .palace {
 
     grid-column: 1 / 4;
-    grid-row: 12 / 14;
+    grid-row: 13 / 15;
     width: 200px;
     height: 200px;
     margin: 50px; 
@@ -590,7 +630,7 @@ html {
 .tower {
 
     grid-column: 9 / 11;
-    grid-row: 12 / 14;
+    grid-row: 13 / 15;
     width: 200px;
     height: 200px;
     margin: 50px; 
@@ -606,24 +646,14 @@ html {
 .down {
 
     grid-column: 2 / 11;
-    grid-row: 15 / 18;
+    grid-row: 16 / 18;
     width: 900px;
     height: 300px;
     margin: 10px; 
 }
 
-.Heres {
-    
-    grid-column: 4 / 9;
-    grid-row: 3 / 9;
 
-}
 
-.Bartczak {
-
-    grid-column: 4 / 9;
-    grid-row: 9 / 15;
-}
 
 .footer {
 
