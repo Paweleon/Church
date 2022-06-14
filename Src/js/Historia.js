@@ -1,5 +1,5 @@
 const masonry = new Macy({
-    container: '.gallery',
+    container: '.history__gallery',
     mobilefirst: true,
     rows: 3,
     breakAT: {
@@ -12,3 +12,4 @@ const masonry = new Macy({
         y: 40,
     }
 })
+
