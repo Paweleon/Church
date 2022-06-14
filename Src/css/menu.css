@@ -48,6 +48,7 @@
   .navigation__menu li {
     list-style: none;
     padding: 0 1rem;
+    text-shadow: 1px 1px 2x blue;
   
   }
   
