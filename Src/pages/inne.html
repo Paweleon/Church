@@ -1,13 +1,145 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kościół Św. Antoniego</title>
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/kościół.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <link href='http://fonts.googleapis.com/css?family=Akaya+Telivigala&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Amita&subset=latin,latin-ext"  rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Clicker+Script&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+
+
 </head>
-<body>
-    <h2 class="sectionheader">Linki</h2>
-    <p> www.facebook.com </p>
+
+<body class="body">
+
+    <p class="cytat">
+
+        „Będziesz miłował Pana, Boga swego, z całego serca swego i z całej duszy swojej, i z całej myśli swojej, i z
+        całej siły swojej. A drugie jest to: Będziesz miłował bliźniego swego jak siebie samego”.
+        Ew. Marka 12:30–31
+
+    </p>
+
+
+
+    <main class="main" id="top">
+
+
+
+        <header class="header">
+
+             <video src="../assets/logo2.mp4" width=1000px height=350px class="video" autoplay loop> nie działa</video>    
+            
+
+            <nav class="navigation">
+
+
+
+                <div class="navigation__list">
+
+                    <ul class="navigation__menu">
+
+                        <div class="navigation__dropdown"><a href="index.html" class=dropdown__icon>Informacje</a>
+
+                        </div>
+
+                        <div class="navigation__dropdown"><a href="#" class=dropdown__icon>Aktualności</a>
+
+
+                            <ul class="dropdown__menu">
+
+                                <li class="dropdown__item"><a href="ogłoszenia.html"
+                                        class="dropdown__link">Ogłoszenia</a> </li>
+                                <li class="dropdown__item"><a href="News.html" class="dropdown__link">Wydarzenia</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Czytanie na każdy dzień</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Forum</a> </li>
+                                <li class="dropdown__item"><a href="linki.html" class="dropdown__link">Ciekawe linki</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="navigation__dropdown"><a href="#" class="dropdown__icon">Sakramenty</a>
+
+
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Chrzest</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Bierzmowanie</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Eucharystia</a> </li>
+                                <li class="dropdown__item"><a href="pokuta.html" class="dropdown__link">Pokuta</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Namaszczenie Chorych</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Małżenstwo</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Kapłaństwo</a> </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="navigation__dropdown"><a href="#" class=dropdown__icon>Historia</a>
+
+
+                            <ul class="dropdown__menu">
+
+                                <li class="dropdown__item"><a href="HistoriaKościoła.html"
+                                        class="dropdown__link">Historia Kościoła</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Byli proboszczowie</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Historia Biedrzychowic</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Historia Okolic</a> </li>
+
+                            </ul>
+
+                        </div>
+
+
+                    </ul>
+                </div>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+            </nav>
+
+            <script>
+                const hamburger = document.querySelector(".hamburger");
+                const navigation__menu = document.querySelector(".navigation__menu");
+
+                hamburger.addEventListener("click", () => {
+                    hamburger.classList.toggle("active");
+                    navigation__menu.classList.toggle("active");
+                });
+
+                document.querySelectorAll(".nav-link").forEach((link) =>
+                    link.addEventListener("click", () => {
+                        hamburger.classList.remove("active");
+                        navigation__menu.classList.remove("active");
+                    })
+                );
+
+            </script>
+
+
+
+
+        </header>
 </body>
 </html>
