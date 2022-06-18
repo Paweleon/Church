@@ -40,7 +40,7 @@ function creatContent(querySelectorContent, content) {
     element.innerHTML = (content);
 }
 
-creatContent'.section--js', 'zmienione w JS';
+creatContent
 
 const deathStar = {
     diameter: 120000,
@@ -63,3 +63,12 @@ deathStar.fire('Rebel ship')
 console.log(deathStar.name)
 
 console.log(deathStar.commander.name)
+
+
+
+
+const button = document.querySelector('.navigation__button--js')
+button.addEventListener( 'click', () => {
+    const nav = document.querySelector(".navigation--js");
+    nav.classList.toggle('navigation--open');
+})

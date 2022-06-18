@@ -1,0 +1,65 @@
+@media (max-width: 767px) {
+
+      
+  
+
+
+    .navigation {
+
+        background: none;
+        height: 90px;
+        margin: 0;
+        display: flex;
+        position: relative;
+      
+    }
+
+    .navigation__list {
+        display: none;
+        margin-top: 0px;
+        background: linear-gradient(-8deg, #ba05b1, #0b8793 );
+        width: 200px;   
+        height: 100px; 
+        position: absolute; 
+        border-radius: 7px;
+        
+    }
+
+    .navigation__menu {
+        display:block;
+        
+    }
+
+    .dropdown__menu {
+        z-index: 1;
+    }
+
+    .dropdown__icon {
+        color:white;
+       
+    }
+    
+
+    .navigation__button {
+
+        display: block;
+        position: absolute;
+       
+        
+        
+    }
+
+    .navigation--open {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+      }
+
+  
+  
+
+
+   
+}

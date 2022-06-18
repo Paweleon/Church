@@ -65,7 +65,7 @@
                                 </li>
                                 <li class="dropdown__item"><a href="#" class="dropdown__link">Czytanie na każdy dzień</a>
                                 </li>
-                                <li class="dropdown__item"><a href="#" class="dropdown__link">Forum</a> </li>
+                                <li class="dropdown__item"><a href="forum.html" class="dropdown__link">Forum</a> </li>
                                 <li class="dropdown__item"><a href="linki.html" class="dropdown__link">Ciekawe linki</a>
                                 </li>
 
@@ -137,9 +137,59 @@
 
             </script>
 
-
-
-
         </header>
+        <section class="section__information">
+
+        <h2 class="sectionheader">Komunia</h2>
+        <form>
+
+            <p>
+                <label for="password">kod dostępu:</label>
+                <input 
+                required=""
+                id="password" 
+                type="password" 
+                placeholder="Tutaj wpisz hasło" 
+                name="kod__komunia">
+            </p>
+            <p>
+                <input name="kod__komunia"  type="submit" value="wyślij">
+            </p>
+
+        </form>
+
+        <h2 class="sectionheader">Bierzmowanie</h2>
+        <form method="post" action="https://dev.cotenfrontend.pl">
+
+            <p>
+                <label for="password">kod dostępu:</label>
+                <input 
+                required
+                id="password" 
+                type="password" 
+                placeholder="Tutaj wpisz hasło" 
+                name="kod">
+            </p>
+            <p>
+                <input name="kod"  type="submit" value="wyślij">
+            </p>
+
+        </form>
+        <form method="post" action="https://dev.cotenfrontend.pl">
+        <p>
+            <label for="komentarz">Komentarz:</label>
+            <textarea required id="komentarz" name="komentarz">uważam, że...</textarea>
+        </p>
+        
+        <p>
+            <input name="komentarz"  type="submit" value="wyślij">
+        </p>
+    </form>
+
+    <h2>Komentarze</h2>
+
+        
+        </section>
+    </main>   
 </body>
 </html>

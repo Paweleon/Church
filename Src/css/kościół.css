@@ -50,7 +50,7 @@ html {
     position: relative;
     right: 10px;
     background: rgb(26,201,215);
-background: linear-gradient(0deg, rgba(26,201,215,0.7875525210084033) 11%, rgba(255,254,253,1) 83%);
+    background: linear-gradient(0deg, rgba(26,201,215,0.7875525210084033) 11%, rgba(255,254,253,1) 83%);
     margin: 50px;
     border-radius: 100px;
     border: 15px double rgb(228, 168, 4);
@@ -231,31 +231,6 @@ background: linear-gradient(0deg, rgba(26,201,215,0.7875525210084033) 11%, rgba(
 
 /*Zdjęcia__główna*/
 
-.logo {
-
-    display: block;
-    margin: auto;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 1px gray;
-    width: 480px;
-    height: 270px;;
-}
-
-.left__fish {
-    grid-column: 2 / 4;
-    grid-row: 2 / 4; 
-    transform: scaleX(-1) rotate(45deg);
-
-  }
-
-.fish {
-
-    grid-column: 9 / 11;
-    grid-row: 2 / 4;
-    transform: rotate(45deg);
-  }
-
-
 
 .church__right {
 
@@ -265,6 +240,7 @@ background: linear-gradient(0deg, rgba(26,201,215,0.7875525210084033) 11%, rgba(
     height: 200px;
     margin: 50px;  
     transition: 0.5s all linear;
+    
 
 }
 
@@ -535,104 +511,38 @@ background: linear-gradient(0deg, rgba(26,201,215,0.7875525210084033) 11%, rgba(
     right: 5px;
 }
 
+/*forum*/
 
-
-
-
-@media (max-width: 992px) {
-
-  
-  
-  
-
-
-    .grid {
-        
-        display: block;
-        padding: 20px;
-        margin:10px;
-    }
-
-   
-
-    .grid__new {
-
-        display: block;
-        padding: 20px;
-        margin: 10px;
-        position: relative;
-       
-
-    }
-
-    .front__one {
-        display:none;
-    }
-
-    .header {
-    
-        grid-column: 1 / 5;
-    
-    }
-
-    .section {
-    
-        grid-column: 1 / 5;
-        
-    }
-
-    .fish  {
-
-        display: none;
-    }
-
-    .second__fish {
-
-        display: none;
-    }
-
-    .div {
-
-        display: none;
-    }
-
-    .front {
-
-        display: none
-    }
-
-    .back {
-
-        display:none;
-    }
-
-    .inside {
-
-        display: none;
-    }
-
-    .Antoni {
-
-        display: none;
-    }
-
-    .Antonio {
-
-        display: none;
-    }
-
-    .palace {
-
-        display: none;
-    }
-
-    .tower {
-
-        display: none;
-    }
-
-    .down {
-
-        display: none;
-    }
+label {
+    display:block;
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+
+    .main {
+   
+        grid-template-columns: repeat(10, 100px);
+        grid-template-rows: repeat(10, 100px);
+    }  
+    
+     
+    .header {
+        
+        grid-column: 1 / 11;
+        grid-row: 1 / 5;
+      
+    }
+    
+   
+  
+}
+
+

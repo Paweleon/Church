@@ -78,15 +78,15 @@
   
   .dropdown__menu {
     
-      width: 135px;
-      height: 220px;
+      width: 140px;
+      height: 230px;
       justify-content: space-around;
       text-align: left;
       position: absolute;
       background: linear-gradient(-8deg, #ba05b1, #0b8793 ); 
-      padding: 3px;
+      padding: 1px;
       list-style-type: none;
-      margin: 5px;
+      margin: 1px;
       border-radius: 7px;
       display: none;
       
@@ -125,34 +125,48 @@
   /*section stylling*/
   
   /* hamburger*/
-  
+
   .hamburger {
-      display: none;
-    }
+    display: none;
+  }
+
+
+  .navigation__button {
+
+    display: none;
+    background-color: #3505ba;
+    right: 10px;
+    bottom: 70px;
+    width: 40px;
+    border-radius: 7px;
+
+  }
+ 
+  .bar,
+  .fa-times {
+    width: 1.5rem;
+    height: 3px;
+    display: block;
+    color: black;
+    padding: 1px;
+    margin: 6px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: rgb(5, 5, 5);
     
-    .bar,
-    .fa-times {
-      width: 1.5rem;
-      height: 3px;
-      display: block;
-      color: #fff;
-      padding: 0;
-      margin: 6px;
-      -webkit-transition: 0.5s;
-      transition: 0.5s;
-      background-color: #fff;
-    }
     
-    .bar:nth-child(1) {
-      width: 100%;
-    }
-    
-    .bar:nth-child(2) {
-      width: 200%;
-    }
-    
-    .bar:nth-child(3) {
-      width: 300%;
-    }
-    
-    /*koniec hamburgera*/
+  }
+  
+  .bar:nth-child(1) {
+    width: 7px;
+  }
+  
+  .bar:nth-child(2) {
+    width: 15px;
+  }
+  
+  .bar:nth-child(3) {
+    width: 25px;
+  }
+  
+  /*koniec hamburgera*/
