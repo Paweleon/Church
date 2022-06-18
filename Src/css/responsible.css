@@ -1,8 +1,20 @@
 @media (max-width: 767px) {
 
-      
-  
 
+     .main {
+       
+            grid-template-columns: repeat(10, 100px);
+            grid-template-rows: repeat(10, 100px);
+    }  
+        
+         
+    .header {
+            
+            grid-column: 1 / 11;
+            grid-row: 1 / 5;
+          
+    }
+        
 
     .navigation {
 
@@ -51,15 +63,12 @@
 
     .navigation--open {
         display: block;
+        
     }
 
     .hamburger {
         display: block;
       }
-
-  
-  
-
 
    
 }

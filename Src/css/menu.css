@@ -153,8 +153,7 @@
     -webkit-transition: 0.5s;
     transition: 0.5s;
     background-color: rgb(5, 5, 5);
-    
-    
+      
   }
   
   .bar:nth-child(1) {
