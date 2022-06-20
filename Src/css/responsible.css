@@ -63,12 +63,50 @@
 
     .navigation--open {
         display: block;
+
         
     }
+
+    .line__zero--js {
+
+        display: none;
+
+    }
+
+    .line__first--js {
+
+        width: 3px;
+        height: 35px;
+        position: absolute;
+        left: 12px;
+        
+        border-radius: 7px;
+      
+        margin: 5px ;
+        transform: rotate(945deg);
+        
+    }
+   
+    .line__second--js {
+
+        width: 35px;
+        height:3px;
+        position: relative;
+        top: 15px;
+        border-radius: 7px;
+        
+        margin: 5px;
+        transform: rotate(945deg);
+
+        
+    }
+
 
     .hamburger {
         display: block;
       }
+
+   
 
    
 }

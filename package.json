@@ -1,0 +1,22 @@
+{
+  "name": "church",
+  "version": "1.0.0",
+  "description": "Kościół Pw. Św. Antoniego",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paweleon/Church.git"
+  },
+  "author": "Paweł Kuniec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paweleon/Church/issues"
+  },
+  "homepage": "https://github.com/Paweleon/Church#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}

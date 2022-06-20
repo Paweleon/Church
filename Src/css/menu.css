@@ -138,13 +138,14 @@
     right: 10px;
     bottom: 70px;
     width: 40px;
+    height: 40px;
     border-radius: 7px;
 
   }
  
-  .bar,
-  .fa-times {
-    width: 1.5rem;
+  
+  .bar__zero {
+    width: 7px;
     height: 3px;
     display: block;
     color: black;
@@ -153,19 +154,30 @@
     -webkit-transition: 0.5s;
     transition: 0.5s;
     background-color: rgb(5, 5, 5);
-      
   }
   
-  .bar:nth-child(1) {
-    width: 7px;
-  }
-  
-  .bar:nth-child(2) {
+  .bar__first {
     width: 15px;
+    height: 3px;
+    display: block;
+    color: black;
+    padding: 1px;
+    margin: 6px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: rgb(5, 5, 5);
   }
   
-  .bar:nth-child(3) {
+  .bar__second {
     width: 25px;
+    height: 3px;
+    display: block;
+    color: black;
+    padding: 1px;
+    margin: 6px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: rgb(5, 5, 5);
   }
   
   /*koniec hamburgera*/
