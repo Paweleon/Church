@@ -1,0 +1,214 @@
+@import "src/scss/menu.scss";
+@import "src/scss/photos.scss";
+@import "src/scss/responsible.scss";
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*::before {
+  box-sizing: inherit;
+}
+$font-family: "Amita", sans-serif;
+@mixin section {
+  border-top: 1px solid #828385;
+  text-align: justify;
+  margin-top: 20px;
+  font-family: $font-family;
+  color: rgb(61, 3, 114);
+  font-size: 20px;
+}
+@mixin paragraph {
+  font-family: $font-family;
+  font-weight: bold;
+  color: black;
+}
+
+.body {
+  background-image: url(../assets/tło.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  width: 1326px;
+  height: 2300px;
+}
+.cytat {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Clicker Script", sans-serif;
+  color: whitesmoke;
+  width: 1150px;
+  margin: 40px 60px 40px 60px;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(11, 100px);
+  grid-template-rows: repeat(20, 100px);
+  grid-gap: 5px;
+  position: relative;
+  right: 10px;
+  background: rgb(26, 201, 215);
+  background: linear-gradient(
+    0deg,
+    rgba(26, 201, 215, 0.7875525210084033) 11%,
+    rgba(255, 254, 253, 1) 83%
+  );
+  margin: 50px;
+  border-radius: 100px;
+  border: 15px double rgb(228, 168, 4);
+}
+.header {
+  grid-column: 1 / 12;
+  grid-row: 1 / 5;
+  position: absolute;
+  left: 100px;
+}
+.header.video {
+  position: relative;
+  left: 100px;
+  min-width: 100%;
+  margin-left: 100px;
+}
+
+/*strona główna*/
+
+.section__info {
+  grid-column: 4 / 9;
+  grid-row: 5 / 8;
+  @include section;
+}
+.section__duty {
+  grid-column: 4 / 9;
+  grid-row: 8 / 10;
+  @include section;
+}
+.section__antoni {
+  grid-column: 4 / 9;
+  grid-row: 11 / 14;
+  @include section;
+}
+.section__village {
+  grid-column: 4 / 9;
+  grid-row: 14 / 16;
+  @include section;
+}
+
+/*Aktualności*/
+
+.section__announcement {
+  grid-column: 4 / 9;
+  grid-row: 6 / 12;
+  @include section;
+}
+.section__information {
+  grid-column: 4 / 9;
+  grid-row: 6 / 12;
+  @include section;
+}
+.section__forum {
+  grid-column: 4 / 9;
+  grid-row: 6 / 12;
+  @include section;
+}
+label {
+  display: block;
+}
+.section__rap {
+  grid-column: 4 / 10;
+  grid-row: 6 / 12;
+  color: var(--paragraph);
+  font-family: 25px;
+  width: 620px;
+  height: 700px;
+  margin: 5px;
+  padding: 3px;
+  @include section;
+}
+
+/*Sakramenty*/
+
+.section__penance {
+  grid-column: 4 / 9;
+  grid-row: 6 / 30;
+  @include section;
+}
+
+/*Historia*/
+
+.section__history {
+  grid-column: 4 / 9;
+  grid-row: 6 / 12;
+  @include section;
+}
+
+/*Inne*/
+
+.sectionheader {
+  text-align: center;
+}
+.article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.paragraph {
+  font-size: 17px;
+  @include paragraph;
+}
+.paragraph__left {
+  font-size: 14px;
+  text-align: right;
+  top: 1px;
+  @include paragraph;
+}
+.paragraph__right {
+  font-size: 14px;
+  text-align: left;
+  @include paragraph;
+}
+
+/*Animacje*/
+
+.Birthday {
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+  background-color: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 26px;
+  animation: naszaAnimacja 7s linear infinite;
+  transform-origin: 50% 50% 200px;
+}
+
+@keyframes naszaAnimacja {
+  0% {
+    transform: perspective(300px) rotateY(0) translateX(0);
+  }
+  100% {
+    transform: perspective(300px) rotateY(360deg) translateX(150px);
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: fantasy;
+}
+
+.top {
+  color: black;
+  text-decoration: underline;
+  font-size: 25px;
+  font-weight: bolder;
+  position: fixed;
+  bottom: 120px;
+  right: 5px;
+}
+
+

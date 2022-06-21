@@ -1,0 +1,152 @@
+/*Zdjęcia__główna*/
+
+@mixin photo {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    transition: 0.5s all linear;
+  }
+  .church__right {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    @include photo;
+  }
+  
+  .church__right:hover {
+    transform: scale(2.2);
+  }
+  
+  .church__left {
+    grid-column: 9 / 11;
+    grid-row: 5 / 6;
+    @include photo;
+  }
+  
+  .church__left:hover {
+    transform: scale(2.2);
+  }
+  
+  .church__back {
+    grid-column: 9 / 11;
+    grid-row: 8 / 10;
+    @include photo;
+  }
+  
+  .church__back:hover {
+    transform: scale(2.2);
+  }
+  
+  .church__inside:hover {
+    transform: scale(2.2);
+  }
+  
+  .church__inside {
+    grid-column: 1 / 3;
+    grid-row: 8 / 10;
+    @include photo;
+  }
+  
+  .church__inside:hover {
+    transform: scale(2.2);
+  }
+  
+  .Antoni__left {
+    grid-column: 1 / 4;
+    grid-row: 11 / 13;
+    @include photo;
+  }
+  
+  .Antoni__left:hover {
+    transform: scale(2.2);
+  }
+  
+  .Antoni__right {
+    grid-column: 9 / 11;
+    grid-row: 11 / 13;
+    @include photo;
+  }
+  
+  .Antoni__right:hover {
+    transform: scale(2.2);
+  }
+  
+  .village__palace {
+    grid-column: 1 / 4;
+    grid-row: 14 / 16;
+    @include photo;
+  }
+  
+  .village__palace:hover {
+    transform: scale(2.2);
+  }
+  
+  .village__tower {
+    grid-column: 9 / 11;
+    grid-row: 14 / 16;
+    @include photo;
+  }
+  
+  .village__tower:hover {
+    transform: scale(2.2);
+  }
+  
+  .info__down {
+    grid-column: 2 / 11;
+    grid-row: 17 / 19;
+    width: 900px;
+    height: 300px;
+    margin: 10px;
+  }
+  
+  /*Zdjęcia__Aktualności*/
+  
+  .rap {
+    width: 300px;
+    height: 233px;
+    display: inline-block;
+    margin: 1px;
+    padding: 2px;
+    border: 1px solid black;
+    &__img {
+      width: 295px;
+      height: 200px;
+    }
+  }
+  
+  /*Zdjęcia__historia*/
+  
+  .history__gallery {
+    grid-column: 1 / 11;
+    grid-row: 13 / 18;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .history__photo {
+    width: 200px;
+    background: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    opacity: 0, 7;
+    border-radius: 3px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    justify-content: space-between;
+    transition: 0.5s all linear;
+  }
+  
+  .history__photo img {
+    width: 50px;
+    flex-basis: 100%;
+  }
+  
+  .history__photo:hover {
+    opacity: 1;
+    position: absolute;
+    transform: scale(2.2);
+    z-index: 5;
+  }
