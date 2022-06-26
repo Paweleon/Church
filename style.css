@@ -302,7 +302,9 @@
       display: block;
       position: absolute; }
   .dropdown__menu {
-    z-index: 1; }
+    z-index: 1;
+    position: relative;
+    left: 155px; }
   .dropdown__icon {
     color: white; }
   .navigation--open {
