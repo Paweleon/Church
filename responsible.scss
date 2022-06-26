@@ -1,78 +1,69 @@
-@media (max-width: 767px) {
+@media (max-width: 400px) {
 
-    .main {
-      
-           grid-template-columns: repeat(10, 100px);
-           grid-template-rows: repeat(10, 100px);
-   }  
-              
-   .header {
-           
-           grid-column: 1 / 11;
-           grid-row: 1 / 5;      
-   }
-       
-   .navigation {
+  .navigation__button {
+  display: block;}
 
-       background: none;
-       height: 90px;
-       margin: 0;
-       display: flex;
-       position: relative;
-       &__list {
-       display: none;
-       margin-top: 0px;
-       background: linear-gradient(-8deg, #ba05b1, #0b8793 );
-       width: 200px;   
-       height: 100px; 
-       position: absolute; 
-       border-radius: 7px; }
-       &__menu {
-       display:block;}
-       &__button {
-       display: block;
-       position: absolute;}
-   }
+  .navigation {
 
-   .dropdown__menu {
-       z-index: 1;
-   }
+    background: none;
+    height: 90px;
+    margin: 0;
+    display: flex;
+    position: relative;
+    &__list {
+    display: none;
+    margin-top: 0px;
+    background: linear-gradient(-8deg, #ba05b1, #0b8793 );
+    width: 200px;   
+    height: 100px; 
+    position: absolute; 
+    border-radius: 7px; }
+    &__menu {
+    display:block;}
+    &__button {
+    display: block;
+    position: absolute;}
+}
 
-   .dropdown__icon {
-       color:white;    
-   }
+.dropdown__menu {
+    z-index: 1;
+}
 
-   .navigation--open {
-       display: block;}
+.dropdown__icon {
+    color:white;    
+}
 
-   .hamburger {
-        display: block;
-    }  
+.navigation--open {
+    display: block;}
 
-   .line__zero--js {
+.hamburger {
+     display: block;
+ }  
 
-       display: none;
-   }
+.line__zero--js {
 
-   .line__first--js {
+    display: none;
+}
 
-    width: 3px;
-    height: 35px;
-    position: absolute;
-    left: 12px;       
-    border-radius: 7px;
-    margin: 5px ;
-    transform: rotate(945deg);   
+.line__first--js {
+
+ width: 3px;
+ height: 35px;
+ position: absolute;
+ left: 12px;       
+ border-radius: 7px;
+ margin: 5px ;
+ transform: rotate(945deg);   
 }
 
 .line__second--js {
 
-    width: 35px;
-    height:3px;
-    position: relative;
-    top: 15px;
-    border-radius: 7px;
-    margin: 5px;
-    transform: rotate(945deg);
+ width: 35px;
+ height:3px;
+ position: relative;
+ top: 15px;
+ border-radius: 7px;
+ margin: 5px;
+ transform: rotate(945deg);
 } 
 }

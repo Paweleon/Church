@@ -57,6 +57,7 @@
       
     background-color: #b2046f;
     border-radius: 7px;
+    color:yellow;
   }
   
   .dropdown__item{
@@ -83,6 +84,7 @@
   .dropdown__item:hover {
       background-color: #b2046f;
       border-radius: 7px;   
+      
   }
   
   .dropdown__link {
@@ -95,6 +97,9 @@
       color: white;
       text-decoration: none;
       font-size: 15px;  
+  }
+  .dropdown__link:hover {
+    color:yellow;
   }
   .navigation__dropdown a:focus + ul,
   .navigation__dropdown a:hover + ul,
