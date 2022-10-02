@@ -11,7 +11,41 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="responsible.css">
     <link href="https://fonts.googleapis.com/css?family=Amita&subset=latin,latin-ext" rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Clicker+Script&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Clicker+Script&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+    <script language="JavaScript" type="text/javascript">
+            < !--
+            // Copyright (c) 2002 by Michal Nazarewicz (mina86@tlen.pl)
+            // This script is distributed under terms of GNU General Public License 
+            // Visit www.projektcode.prv.pl for more
+
+            // UWAGA: Nazwy uzytkownikow podajemy _wylacznie_ malymi literami... 
+            var users = new Array
+            (
+                new Array('komunia', 'komunia1'),    /// To powtarzamy dla kazdego uzytkownika.
+                new Array('user2', 'password2'),
+                new Array('user3', 'password3')     /// Nalezy pameitac aby w ostatniej pozycji zlikwidowac przecinek...
+                // ^ -o tutaj :)
+            );
+
+        function CheckPassword(form) {
+            var user = form.user.value.toLowerCase();;
+            var pass = form.pass.value;
+
+            for (var i = 0; i < users.length; i++)
+                if (users[i][0] == user)
+                    if (users[i][1] == pass) {
+                        form.action = "komunia.html";
+                        return true;
+                    } else {
+                        alert("Sorki, " + user + ", zle haslo.");
+                        return false;
+                    }
+            alert("Niewlasciwe dane!");
+            return false;
+        }
+            //-->
+    </script>
 
 </head>
 
@@ -26,10 +60,10 @@
     </p>
 
     <main class="main" id="top">
-        
+
         <header class="header">
-            <video src="Logo2.mp4" width="1000px" height="350px" class="video" autoplay loop><img
-                    src="logo1.png" width="1000px" height="350px" class="video" alt="logo"></video>
+            <video src="Logo2.mp4" width="1000px" height="350px" class="video" autoplay loop><img src="logo1.png"
+                    width="1000px" height="350px" class="video" alt="logo"></video>
 
             <nav class="navigation">
                 <div class="navigation__button navigation__button--js" aria-label="otwórz menu">
@@ -48,11 +82,13 @@
                                         class="dropdown__link">Ogłoszenia</a> </li>
                                 <li class="dropdown__item"><a href="News.html" class="dropdown__link">Wydarzenia</a>
                                 </li>
-                                <li class="dropdown__item"><a href="https://liturgia.wiara.pl/kalendarz/67b53.Czytania-mszalne/2022-06-26" target="_blank" class="dropdown__link">Czytanie na każdy
+                                <li class="dropdown__item"><a
+                                        href="https://liturgia.wiara.pl/kalendarz/67b53.Czytania-mszalne/2022-06-26"
+                                        target="_blank" class="dropdown__link">Czytanie na każdy
                                         dzień</a></li>
                                 <li class="dropdown__item"><a href="forum.html" class="dropdown__link">Forum</a> </li>
                                 <li class="dropdown__item"><a href="linki.html" class="dropdown__link">Ciekawe linki</a>
-                                </li>                               
+                                </li>
                             </ul>
                         </li>
 
@@ -73,7 +109,7 @@
                             <ul class="dropdown__menu">
                                 <li class="dropdown__item"><a href="HistoriaKościoła.html"
                                         class="dropdown__link">Historia Kościoła</a> </li>
-                                <li class="dropdown__item"><a href="#" class="dropdown__link">Byli proboszczowie</a>
+                                <li class="dropdown__item"><a href="priest.html" class="dropdown__link">Byli proboszczowie</a>
                                 </li>
                                 <li class="dropdown__item"><a href="#" class="dropdown__link">Historia Biedrzychowic</a>
                                 </li>
@@ -84,49 +120,44 @@
                 </div>
             </nav>
         </header>
-        
+
         <section class="section__forum">
 
-        <h2 class="sectionheader">Komunia</h2>
-        <form>
+            <h2 class="sectionheader">Komunia</h2>
 
-            <p>
-                <label for="password">kod dostępu:</label>
-                <input 
-                required=""
-                id="password" 
-                type="password" 
-                placeholder="Tutaj wpisz hasło" 
-                name="kod__komunia">
-            </p>
-            <p>
-                <input name="kod__komunia"  type="submit" value="wyślij">
-            </p>
+            <form method="post" onsubmit="return CheckPassword(this)"> 
+                Login <input name="user"><br> 
+                Hasło <input name="pass" type="password"><br><br> <input type="submit" value="Skocz"> 
+                <input type="reset" value="Wyczyść">
+                
+                <form>
 
-        </form>
-
-        <h2 class="sectionheader">Bierzmowanie</h2>
-        <form method="post" action="https://dev.cotenfrontend.pl">
-
-            <p>
-                <label for="password">kod dostępu:</label>
-                <input 
-                required
-                id="password" 
-                type="password" 
-                placeholder="Tutaj wpisz hasło" 
-                name="kod">
-            </p>
-            <p>
-                <input name="kod"  type="submit" value="wyślij">
-            </p>
-
+                    <p>
+                        <label for="password">kod dostępu:</label>
+                        <input required="" id="password" type="password" placeholder="Tutaj wpisz hasło"
+                            name="kod__komunia">
+                    </p>
+                    <p>
+                        <input name="kod__komunia" type="submit" value="wyślij">
+                    </p>
     
+                </form>
 
-        
+            <h2 class="sectionheader">Bierzmowanie</h2>
+            <form method="post" action="https://dev.cotenfrontend.pl">
+
+                <p>
+                    <label for="password">kod dostępu:</label>
+                    <input required id="password" type="password" placeholder="Tutaj wpisz hasło" name="kod">
+                </p>
+                <p>
+                    <input name="kod" type="submit" value="wyślij">
+                </p>
+
         </section>
-    </main>   
+    </main>
     <script src="kościół.js">
     </script>
 </body>
+
 </html>

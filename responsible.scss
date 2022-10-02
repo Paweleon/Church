@@ -1,10 +1,21 @@
 @media (max-width: 400px) {
 
   .navigation__button {
-  display: block;}
+  display: block;
+  animation: button 2s ease-in-out infinite;
+  
+}
+
+  @keyframes button {
+    from {
+      transform: scale(1);
+  } 
+  to {
+    transform: scale(2);
+  } 
+}
 
   .navigation {
-
     background: none;
     height: 90px;
     margin: 0;
@@ -12,10 +23,11 @@
     position: relative;
     &__list {
     display: none;
+    transition: all 0.5s;
     margin-top: 0px;
     background: linear-gradient(-8deg, #ba05b1, #0b8793 );
-    width: 200px;   
-    height: 100px; 
+    width: 300px;
+    height: 100px;
     position: absolute; 
     border-radius: 7px; }
     &__menu {
@@ -23,6 +35,7 @@
     &__button {
     display: block;
     position: absolute;}
+
 }
 
 .dropdown__menu {
@@ -55,11 +68,14 @@
  left: 12px;       
  border-radius: 7px;
  margin: 5px ;
- transform: rotate(945deg);   
+ transform: rotate(945deg);  
+ background-color:white;
+ 
 }
 
 .line__second--js {
 
+ background-color:white;
  width: 35px;
  height:3px;
  position: relative;
@@ -67,5 +83,6 @@
  border-radius: 7px;
  margin: 5px;
  transform: rotate(945deg);
+
 } 
 }

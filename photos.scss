@@ -115,15 +115,7 @@
   
   /*Zdjęcia__historia*/
   
-  .history__gallery {
-    grid-column: 1 / 11;
-    grid-row: 13 / 18;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 20px;
-    margin: 10px;
-  }
+ 
   
   .history__photo {
     width: 200px;
@@ -150,3 +142,29 @@
     transform: scale(2.2);
     z-index: 5;
   }
+
+  .Nowak {
+    grid-column: 5 / 8;
+    grid-row: 8 / 12;
+    margin-left: 120px;
+    margin-top: 20px;
+    
+  }
+
+  .Mormol {
+    grid-column: 5 / 8;
+    grid-row: 12 / 17;
+    margin-left: 120px;
+    margin-top: 20px;
+    
+  }
+
+  .Krukowski {
+    grid-column: 5 / 8;
+    grid-row: 17 / 21;
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+
+
+

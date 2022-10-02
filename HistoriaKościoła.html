@@ -73,7 +73,7 @@
                             <ul class="dropdown__menu">
                                 <li class="dropdown__item"><a href="HistoriaKościoła.html"
                                         class="dropdown__link">Historia Kościoła</a> </li>
-                                <li class="dropdown__item"><a href="#" class="dropdown__link">Byli proboszczowie</a>
+                                <li class="dropdown__item"><a href="priest.html" class="dropdown__link">Byli proboszczowie</a>
                                 </li>
                                 <li class="dropdown__item"><a href="#" class="dropdown__link">Historia Biedrzychowic</a>
                                 </li>
@@ -121,57 +121,66 @@
 
         </section>
 
-        <div class="history__gallery">
+       
 
-            <script src="https://cdn.jsdelivr.net/npm/macy@2.5.1/dist/macy.min.js"></script>
+        <div id="wrapper" class="gallery">
 
+      
 
-            <figure class="history__photo">
+            <div id="slides" class="slides" tabindex="1" autofocus="autofocus">
+             
+              <figure id="slide1" class="slide" class="show">
+                <img class="picture" src="https://polska-org.pl/foto/27/Biedrzychowice_27136.jpg" alt="Kościół 7" width="100%" height="500px" />
+              </figure>
+      
+              <figure id="slide2" class="slide">
+                <img class="picture" src="https://polska-org.pl/foto/9815/Biedrzychowice_9815185.jpg" width="100%" height="500px" />
+              </figure>
+      
+              <figure id="slide3" class="slide">
+                <img class="picture" src="https://polska-org.pl/foto/284/Wnetrze_kosciola_Biedrzychowice_284609.jpg" width="100%" height="500px" />
+                
+              </figure>
+      
+              <figure id="slide4" class="slide">
+                <img class="picture" src="https://polska-org.pl/foto/27/Kosciol_sw_Antoniego_Biedrzychowice_27139.jpg" width="100%" height="500px"/>
+               
+              </figure>
+      
+              <figure id="slide5" class="slide">
+                <img class="picture" src="https://polska-org.pl/foto/27/Plebania_Biedrzychowice_27142.jpg" width="100%" height="500px"/>
+               
+              </figure>
 
-                <img src="https://polska-org.pl/foto/8185/Kosciol_sw_Antoniego_Biedrzychowice_8185228.jpg"
-                    alt="Kościół">
+              <figure id="slide6" class="slide">
+                <img class="picture" src="https://polska-org.pl/foto/6293/Kosciol_sw_Antoniego_Biedrzychowice_6293340.jpg" width="100%" height="500px"/>
+                
+              </figure>
 
-            </figure>
-
-            <figure class="history__photo">
-
-                <img src="https://polska-org.pl/foto/6293/Kosciol_sw_Antoniego_Biedrzychowice_6293340.jpg"
-                    alt="Kościół 2">
-
-            </figure>
-
-            <figure class="history__photo">
-
-                <img src="https://polska-org.pl/foto/27/Plebania_Biedrzychowice_27142.jpg" alt="Kościół 3">
-
-            </figure>
-
-            <figure class="history__photo">
-
-                <img src="https://polska-org.pl/foto/27/Kosciol_sw_Antoniego_Biedrzychowice_27139.jpg" alt="Kościół 4">
-
-            </figure>
-
-
-            <figure class="history__photo">
-
-                <img src="https://polska-org.pl/foto/27/Biedrzychowice_27136.jpg" alt="Kościół 5">
-
-            </figure>
-
-            <figure class="history__photo">
-
-                <img src="https://polska-org.pl/foto/9815/Biedrzychowice_9815185.jpg" alt="Kościół 6">
-
-            </figure>
-
-            <figure class="history__photo">
-
-                <img src="https://polska-org.pl/foto/284/Wnetrze_kosciola_Biedrzychowice_284609.jpg" alt="Kościół 7">
-
-            </figure>
-
-        </div>
+              <figure id="slide7" class="slide">
+                <img class="picture" src="https://polska-org.pl/foto/8185/Kosciol_sw_Antoniego_Biedrzychowice_8185228.jpg" width="100%" height="500px"/>
+                
+              </figure>
+      
+              <div id="prev" class="prev">&laquo;</div>
+              <div id="next" class="next">&raquo;</div>
+            </div>
+            <!-- // slides -->
+            <nav class="buttons">
+              <ul>
+                <li><button id="pin1" class="pin" ></li>
+                <li><button id="pin2" class="pin" ></li>
+                <li><button id="pin3" class="pin" ></li>
+                <li><button id="pin4" class="pin" ></li>
+                <li><button id="pin5" class="pin" /></li>
+                <li><button id="pin6" class="pin" ></li>
+                <li><button id="pin7" class="pin" ></li>
+              </ul>
+      
+              <button id="play" class="play"></button>
+            </nav>
+      
+          </div>
 
         <a href="#top" class="top">w górę! </a>
 
@@ -189,7 +198,7 @@
 
 
 
-    <script src="Historia.js">
+    <script rel="stylesheet"  src="Historia.js">
     </script>
     <script src="kościół.js">
     </script>
