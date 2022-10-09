@@ -55,7 +55,6 @@
 
 .dropdown__menu {
   width: 140px;
-  height: 230px;
   justify-content: space-around;
   text-align: left;
   position: absolute;
@@ -492,6 +491,36 @@ label {
 
 /*Sakramenty*/
 .section__penance {
+  grid-column: 4 / 9;
+  grid-row: 6 / 30;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  margin-top: 20px;
+  font-family: "Amita", sans-serif;
+  color: #3d0372;
+  font-size: 20px; }
+
+.section__baptism {
+  grid-column: 4 / 9;
+  grid-row: 6 / 30;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  margin-top: 20px;
+  font-family: "Amita", sans-serif;
+  color: #3d0372;
+  font-size: 20px; }
+
+.section__communion {
+  grid-column: 4 / 9;
+  grid-row: 6 / 30;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  margin-top: 20px;
+  font-family: "Amita", sans-serif;
+  color: #3d0372;
+  font-size: 20px; }
+
+.section__marriage {
   grid-column: 4 / 9;
   grid-row: 6 / 30;
   border-top: 1px solid #828385;

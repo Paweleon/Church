@@ -136,6 +136,25 @@ label {
   @include section;
 }
 
+.section__baptism {
+  grid-column: 4 / 9;
+  grid-row: 6 / 30;
+  @include section;
+}
+
+.section__communion {
+  grid-column: 4 / 9;
+  grid-row: 6 / 30;
+  @include section;
+}
+
+.section__marriage {
+  grid-column: 4 / 9;
+  grid-row: 6 / 30;
+  @include section;
+}
+
+
 /*Historia*/
 
 .section__history {

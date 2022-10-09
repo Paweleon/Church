@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="responsible.css">
     <link href="https://fonts.googleapis.com/css?family=Amita&subset=latin,latin-ext" rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Clicker+Script&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Clicker+Script&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
 
 </head>
 
@@ -26,10 +27,10 @@
     </p>
 
     <main class="main" id="top">
-        
+
         <header class="header">
-            <video src="Logo2.mp4" width="1000px" height="350px" class="video" autoplay loop><img
-                    src="logo1.png" width="1000px" height="350px" class="video" alt="logo"></video>
+            <video src="Logo2.mp4" width="1000px" height="350px" class="video" autoplay loop><img src="logo1.png"
+                    width="1000px" height="350px" class="video" alt="logo"></video>
 
             <nav class="navigation">
                 <div class="navigation__button navigation__button--js" aria-label="otwórz menu">
@@ -48,23 +49,27 @@
                                         class="dropdown__link">Ogłoszenia</a> </li>
                                 <li class="dropdown__item"><a href="News.html" class="dropdown__link">Wydarzenia</a>
                                 </li>
-                                <li class="dropdown__item"><a href="https://liturgia.wiara.pl/kalendarz/67b53.Czytania-mszalne/2022-06-26" target="_blank" class="dropdown__link">Czytanie na każdy
+                                <li class="dropdown__item"><a
+                                        href="https://liturgia.wiara.pl/kalendarz/67b53.Czytania-mszalne/2022-06-26"
+                                        target="_blank" class="dropdown__link">Czytanie na każdy
                                         dzień</a></li>
                                 <li class="dropdown__item"><a href="forum.html" class="dropdown__link">Forum</a> </li>
                                 <li class="dropdown__item"><a href="linki.html" class="dropdown__link">Ciekawe linki</a>
-                                </li>                               
+                                </li>
                             </ul>
                         </li>
 
                         <li class="navigation__dropdown"><a href="#" class="dropdown__icon">Sakramenty</a>
                             <ul class="dropdown__menu">
-                                <li class="dropdown__item"><a href="#" class="dropdown__link">Chrzest</a> </li>
+                                <li class="dropdown__item"><a href="chrzest.html" class="dropdown__link">Chrzest</a>
+                                </li>
                                 <li class="dropdown__item"><a href="#" class="dropdown__link">Bierzmowanie</a> </li>
-                                <li class="dropdown__item"><a href="#" class="dropdown__link">Eucharystia</a> </li>
+                                <li class="dropdown__item"><a href="komunia.html" class="dropdown__link">Eucharystia</a>
+                                </li>
                                 <li class="dropdown__item"><a href="pokuta.html" class="dropdown__link">Pokuta</a> </li>
                                 <li class="dropdown__item"><a href="#" class="dropdown__link">Namaszczenie Chorych</a>
                                 </li>
-                                <li class="dropdown__item"><a href="#" class="dropdown__link">Małżenstwo</a> </li>
+                                <li class="dropdown__item"><a href="marriage.html" class="dropdown__link">Małżenstwo</a> </li>
                                 <li class="dropdown__item"><a href="#" class="dropdown__link">Kapłaństwo</a> </li>
                             </ul>
                         </li>
@@ -73,7 +78,8 @@
                             <ul class="dropdown__menu">
                                 <li class="dropdown__item"><a href="HistoriaKościoła.html"
                                         class="dropdown__link">Historia Kościoła</a> </li>
-                                <li class="dropdown__item"><a href="priest.html" class="dropdown__link">Byli proboszczowie</a>
+                                <li class="dropdown__item"><a href="priest.html" class="dropdown__link">Byli
+                                        proboszczowie</a>
                                 </li>
                                 <li class="dropdown__item"><a href="#" class="dropdown__link">Historia Biedrzychowic</a>
                                 </li>
@@ -85,24 +91,34 @@
             </nav>
         </header>
 
-        <main>
-        </form>
-        <form method="post" action="https://dev.cotenfrontend.pl">
-        <p>
-            <label for="komentarz">Komentarz:</label>
-            <textarea required id="komentarz" name="komentarz">uważam, że...</textarea>
-        </p>
-        
-        <p>
-            <input name="komentarz"  type="submit" value="wyślij">
-        </p>
-    </form>
+        <section class="section__communion">
+            <h2 class="sectionheader">Pierwsza komunia Św.</h2>
+            <h3> Dokumenty niezbędne do zgłoszenia dziecka do przyjęcia sakramentu Pierwszej Komunii Św.</h3>
+            <ul>
+                <li>Świadectwo Chrztu Św. dziecka </li>
+            </ul>
 
-    <h2>Komentarze</h2>
-        </main>
+
+
+            </form>
+            <form method="post" action="https://dev.cotenfrontend.pl">
+                <p>
+                    <label for="komentarz">Komentarz:</label>
+                    <textarea required id="komentarz" name="komentarz">uważam, że...</textarea>
+                </p>
+
+                <p>
+                    <input name="komentarz" type="submit" value="wyślij">
+                </p>
+            </form>
+
+            <h2>Komentarze</h2>
+        </section>
+
 
         <script src="kościół.js">
         </script>
-    
+
 </body>
+
 </html>
